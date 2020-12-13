@@ -1,0 +1,13 @@
+<div *ngFor="let result of resultados" >
+  <ngx-charts-gauge
+  [scheme]="colorScheme"
+  [results]="result"
+  [legend]="legend"
+  [legendPosition]="legendPosition"
+  (select)="onSelect($event)"
+  (activate)="onActivate($event)"
+  (deactivate)="onDeactivate($event)"
+  >
+</ngx-charts-gauge>
+</div>
+
